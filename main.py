@@ -63,12 +63,6 @@ def imprimir_dados(arquivo_nome):
     except FileNotFoundError:
         print(f'O arquivo "{arquivo_nome}" não foi encontrado.')
 
-# Funções contas_a_pagar, contas_a_receber, baixa_lancamento, excluir_lancamento e menu seguem o mesmo padrão.
-
-# Insira as demais funções aqui.
-
-
-
 def baixa_lancamento(arquivo_nome):
     imprimir_dados(arquivo_nome)  # Mostrar os lançamentos abertos
     try:
@@ -170,8 +164,6 @@ def contas_a_pagar(id_usuario):
     }
     adicionar_valor('contas_pagar.csv', novo_valor_pagar)
     print('Lançamento concluído!')
-
-
 
 def contas_a_receber(id_usuario):
     print('A opção escolhida foi Contas a Receber')
